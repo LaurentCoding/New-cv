@@ -9,14 +9,37 @@
   --fond-dark: #0C293B;
   --couleur-titre: #F7A746;
   --fond-light: #EDE7E3;
+  --ESSAI:#1C5D99;
+  --essai2:#251101;
 }
 
 @font-face {
   font-family: "titre";
-  src: url("/font/times.ttf");
+  src: url("/font/MOCH2.ttf");
 }
-h1, h2 {
+@font-face {
+  font-family: "sous-titre";
+  src: url("/font/MOCH1.ttf");
+}
+@font-face {
+  font-family: "article";
+  src: url("/font/SLAB.ttf");
+}
+@font-face {
+  font-family: "paragraphe";
+  src: url("/font/ZEN.ttf");
+}
+h1 {
   font-family: 'titre';
+}
+h2 {
+  font-family: "sous-titre";
+}
+h3 {
+  font-family: "article";
+}
+h4 {
+  font-family: "paragraphe";
 }
 
 li {
@@ -66,7 +89,6 @@ header {
   border-radius: 50%;
   position: absolute;
   transform: translate(13px, 15px);
-  
 }
 
 article {
@@ -78,12 +100,14 @@ article {
   background-color: var(--fond-dark);
 }
 article, .titre h1 {
-  font-size: 2em;
+  font-size: 1.7em;
   color: var(--ecriture);
   /* font-family: 'titre'; */
 }
 
 article, .titre span {
+  font-size: 2em;
+  font-weight: bold;
   color: var(--couleur-titre);
 }
 article, .titre h2 {
@@ -101,7 +125,7 @@ main h2 {
   color: var(--ecriture);
 }
 main h2 {
-  font-size: 1.2em;
+  font-size: 1em;
   margin: 20px 10px;
   text-transform: uppercase;
 }
@@ -148,8 +172,6 @@ section {
   grid-column-start: 2 ;
   grid-column-end: 4;
   background-color: var(--fond-light);
-  
-  padding-left: 20px;
 }
 section h2 {
   padding: -10px;
@@ -163,8 +185,12 @@ section .formation::after {
   margin-top: 5px; 
   width: 6vw;
 }
+.form {
+  width: 80%;
+  margin: 0 auto;
+}
 section h3 {
-  color: var(--couleur-titre);
+  color: var(--essai2);
   margin-top: 20px;
 }
 section h4 {
@@ -174,12 +200,17 @@ section ul {
   margin-top: 10px;
 }
 section ul li {
-  color: var(--fond-dark);
+  color: var(--ESSAI);
+  font-weight: bold;
 }
 
 section .logo ul {
+ 
   display: flex;
   flex-wrap: wrap;
+  width: 80%;
+  margin: 10px auto;
+
 }
 section .logo ul img {
   width: 120px;
