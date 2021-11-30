@@ -3,6 +3,7 @@
   margin:0;
   box-sizing: border-box;
 }
+
 :root {
   --couleur-dark: #005156;
   --ecriture: #E03F10;
@@ -12,6 +13,7 @@
   --ESSAI:#1C5D99;
   --essai2:#251101;
 }
+
 
 @font-face {
   font-family: "titre";
@@ -47,7 +49,7 @@ li {
 }
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1024px;
 }
 
 header {
@@ -100,7 +102,7 @@ article {
   background-color: var(--fond-dark);
 }
 article, .titre h1 {
-  font-size: 1.7em;
+  font-size: 1.5em;
   color: var(--ecriture);
   /* font-family: 'titre'; */
 }
@@ -213,8 +215,8 @@ section .logo ul {
 
 }
 section .logo ul img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   padding: 30px;
 }
 
@@ -230,8 +232,7 @@ main {
 }
 @media  screen and  (max-width: 769px){
   header {
-   
-    grid-template-columns: 30vw 1fr 1fr;
+    grid-template-columns: 35vw 1fr 1fr;
 }
 article {
   display: flex;
@@ -242,12 +243,15 @@ article {
   background-color: var(--fond-dark);
 }
 article, .titre h1 {
-  font-size: 1.5em;
+  font-size: 1.4em;
   color: var(--ecriture);
+}
+article, .titre span {
+  font-size: 1.5em;  
 }
 
 main {
-  grid-template-columns: 30vw 1fr 1fr;
+  grid-template-columns: 35vw 1fr 1fr;
 } 
 section .logo ul img {
   width: 80px;
@@ -271,7 +275,7 @@ article {
   background-color: var(--fond-dark);
 }
 article, .titre h1 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: var(--ecriture);
 }
 
@@ -281,10 +285,11 @@ main {
   grid-template-rows: 0vw 1fr 1f;
 } 
 section .logo ul img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   padding: 10px;
 }
 }
+
 
 
