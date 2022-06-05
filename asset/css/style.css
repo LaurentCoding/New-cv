@@ -73,12 +73,12 @@ header {
   background-color: var(--fond-light);
   border-radius: 50%;
   position: absolute;
-  transform: translateX(7vw);
+  transform: translateX(2vw);
 }
 .profil  .rond {
   width: 200px;
   height: 200px;
-  background-color: var(--fond-dark);
+  background-color: var(--fond-light);
   border-radius: 50%;
   position: absolute;
   transform: translate(20px, 18px);
@@ -103,17 +103,17 @@ article {
 }
 article, .titre h1 {
   font-size: 1.5em;
-  color: var(--ecriture);
+  color: var(--couleur-titre);
   /* font-family: 'titre'; */
 }
 
 article, .titre span {
   font-size: 2em;
   font-weight: bold;
-  color: var(--couleur-titre);
+  color: var(--fond-light);
 }
 article, .titre h2 {
-  color: var(--fond-light);
+  color: var(--ecriture);
   text-transform: capitalize;
 }
 main {
@@ -122,9 +122,12 @@ main {
   grid-template-columns: 16vw 1fr 1fr;
  /*  grid-template-rows: 1200px;*/
 } 
-main aside li,
+main aside li{
+  color: var(--fond-light);
+}
+
 main h2 {
-  color: var(--ecriture);
+  color: var(--couleur-titre);
 }
 main h2 {
   font-size: 1em;
@@ -150,7 +153,7 @@ aside .experience::after {
   position: absolute;
   display: flex;
   border: 1px solid;
-  color: var(--couleur-titre); 
+  color: var(--ecriture); 
   margin-top: 5px; 
 }
 aside .propos::after {
@@ -183,7 +186,7 @@ section .formation::after {
   position: absolute;
   display: flex;
   border: 1px solid;
-  color: var(--couleur-dark); 
+  color: var(--ecriture); 
   margin-top: 5px; 
   width: 6vw;
 }
